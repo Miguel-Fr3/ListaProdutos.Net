@@ -8,7 +8,7 @@ builder.Services.AddControllersWithViews();
 
 // Adiciona a configuração do contexto do banco de dados
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseOracle(builder.Configuration.GetConnectionString("ConectarBanco")));
 
 var app = builder.Build();
 
